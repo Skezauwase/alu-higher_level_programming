@@ -1,3 +1,2 @@
 #!/bin/bash
 python3 -c "$PYCODE"
-export PYCODE='print(88+10)'
