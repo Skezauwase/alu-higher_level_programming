@@ -1,12 +1,2 @@
 #!/bin/bash
-# 1-run_inline: Runs Python code stored in $PYCODE
-
-# Exit if PYCODE is not set
-if [ -z "$PYCODE" ]; then
-    echo "Error: PYCODE is empty"
-    exit 1
-fi
-
-# Run the Python code
 python3 -c "$PYCODE"
-
