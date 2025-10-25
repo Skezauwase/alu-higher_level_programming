@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-def print_matrix(matrix):
+def square_matrix_simple(matrix=[]):
+    new_matrix = []
     for row in matrix:
+        new_row = []
         for elem in row:
-            print(elem, end=" ")
-        print()
+            new_row.append(elem ** 2)
+        new_matrix.append(new_row)
+    return new_matrix
