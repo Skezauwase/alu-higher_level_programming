@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Fetches https://alu-intranet.hbtn.io/status using urllib
+Fetches https://alu-intranet.hbtn.io/status using urllib.
 """
 import urllib.request
 
