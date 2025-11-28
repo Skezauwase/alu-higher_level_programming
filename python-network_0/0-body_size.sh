@@ -1,3 +1,3 @@
 #!/bin/bash
-# Takes a URL, sends a request, and displays the size of the body in bytes
-curl -s "http://$1" | wc -c
+# display Content-Length
+curl -sI "$1" | grep 'Content-Length' | cut -d " " -f2
