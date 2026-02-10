@@ -1,19 +1,31 @@
 #!/usr/bin/python3
-"""This module defines a Square class with size validation."""
+
+"""Square Class.
+This module contains a class that defines a square.
+Usage Example:
+    Square = __import__('2-square').Square
+    my_square = Square(3)
+    print(type(my_square))
+    print(my_square.__dict__)
+"""
 
 
 class Square:
-    """Represents a square with a private size attribute."""
+    """Defines the blueprint of a square.
+    Attribute:
+        size: An integer indicating the size of the square object.
+    """
 
     def __init__(self, size=0):
-        """Initialize a square with optional size.
-
-        Args:
-            size (int): The size of the square (default 0).
+        """An object constructor method.
+        Initiatilizes Square with size.
+        Arg:
+            size: A integer representing object size.
+                Has a default value of 0.
 
         Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
+            TypeError: if size is not an integer.
+            ValueError: If size < 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
